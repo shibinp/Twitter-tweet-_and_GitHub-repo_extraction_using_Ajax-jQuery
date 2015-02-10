@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+<body background="../static/index2.jpeg">
+<!--<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">-->
+<div align="center">
+<br><br>
+<br>
+<br>
+<div align="left">
+{%for r in data%}
+
+	<br><span style="color:white;"> {{r}} </span><br>
+{%endfor%}
+</div>
+<br>
+<br>
+<br>
+<br>
+<form action ="" method="post">
+<input name="github" type="text" size="40" value="Enter your GITHUB name!">
+<br><input name="submit" type="submit" value="SUBMIT!"><br>
+</form>
+</div>
+</form>
+</body>
+</html>

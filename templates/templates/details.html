@@ -1,0 +1,30 @@
+<!--details.html-->
+<html>
+  <head>
+    <title>{{ title }} - student Directory</title>
+  </head>
+  <body>
+      <center>
+      <h1>{{ head.hd }}</h1>
+      <br>
+      <h3><a href="/index">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/details">DETAILS</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/display">DISPLAY</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      </center>
+        <BR><BR>
+      <center>
+ <FORM action="/insert" method="post">
+    <P>
+    <LABEL for="firstname">First name: </LABEL>
+      <INPUT type="text" name=fname><BR><BR>
+    <LABEL for="lastname">Last name: </LABEL>
+              <INPUT type="text" name=sname><BR><BR>
+    <LABEL for="mark">mark: </LABEL>
+              <INPUT type="text" name=mark><BR><BR>
+    <INPUT type="radio" name="sex" value="Male"> Male<BR><BR>
+    <INPUT type="radio" name="sex" value="Female"> Female<BR><BR>
+    <INPUT type="submit" value="Send"> <INPUT type="reset">
+    </P>
+    </center>
+ </FORM>
+  </body>
+</html>
+

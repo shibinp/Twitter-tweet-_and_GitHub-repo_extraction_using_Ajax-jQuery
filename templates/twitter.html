@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+<body background="../static/bg_twitter.jpg">
+<a href="/HOME">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!--<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">-->
+<div align="right">
+<br><br>
+<br>
+<br>
+<div align="right">
+{% for tweets in a%}
+	<br><span style= "color:black:">{{tweets}}</span></br>
+{%endfor%}
+</div>
+<br>
+<br>
+<br>
+<br>
+<form action="twitter" method="post">
+<input name="twitter" type="text" size="40" value="Enter your TWITTER name!">
+<br><input name = "submit" type="submit" value="SUBMIT!"><br>
+</div>
+</form>
+</body>
+</html>
