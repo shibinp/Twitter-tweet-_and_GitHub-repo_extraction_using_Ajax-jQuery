@@ -63,7 +63,7 @@ def github():
 
 @app.route('/twtdata',methods =['GET','POST'])
 def twtdata():
-	username=request.form['text']
+	name=request.form['text']
 	Consumer_Key = "kwODRtoqdJv1ng0KoufzviOCc"
 	Consumer_Secret = "c7q5OD5XtA9SyAaBAvHqOAqhsTm4myTzNOQTz4LKMNwTdl61hE"
 	Access_Key = "299754718-etGCSOZvEr4F5P9MV1ld47EZGq8GoHH56ngu9nPw"

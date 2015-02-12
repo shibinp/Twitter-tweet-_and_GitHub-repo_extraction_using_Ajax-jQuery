@@ -2,11 +2,11 @@
 <head><script src="static/jquery.min.js"></script>
 <script>
 function exefun(){
-	$.post('/getdata',{
-	'text':document.getElementById("git").value,
+	$.post('/twtdata',{
+	'text':document.getElementById("twi").value,
 	}).done(function success(datas){
 		
-		document.getElementById("github1").innerHTML=datas[1];
+		document.getElementById("twitter1").innerHTML=datas[1];
 	     }).fail(function error(){
 		alert("error");
 		})
@@ -32,9 +32,10 @@ function exefun(){
 <br>
 <br>
 <form action="twitter" method="post">
-<input name="twitter" type="text" size="40" value="Enter your TWITTER name!">
-<br><input name = "submit" type="submit" value="SUBMIT!"><br>
+<input id="twi" name="twi" type="text" size="40" value="Enter your TWITTER name!">
+<br><input name = "submit" type="button" onclick="exefun"value="SUBMIT!"><br>
 </div>
 </form>
+<div id="twitter1"></div>
 </body>
 </html>
