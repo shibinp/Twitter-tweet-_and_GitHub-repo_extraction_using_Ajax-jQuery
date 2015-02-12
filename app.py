@@ -33,7 +33,7 @@ def github():
    
    l=[]
    if request.form.get('submit'):
-	API_TOKEN='e3964aabf946fd981cc0a1c6bee39aa8baba28af'
+	API_TOKEN='*******************************'
 	GIT_API_URL='https://api.github.com'
 
 	import requests
@@ -63,11 +63,11 @@ def github():
 
 @app.route('/twtdata',methods =['GET','POST'])
 def twtdata():
-	username=request.form['text']
-	Consumer_Key = "kwODRtoqdJv1ng0KoufzviOCc"
-	Consumer_Secret = "c7q5OD5XtA9SyAaBAvHqOAqhsTm4myTzNOQTz4LKMNwTdl61hE"
-	Access_Key = "299754718-etGCSOZvEr4F5P9MV1ld47EZGq8GoHH56ngu9nPw"
-	Access_Secret = "nnkGj5xkqy82aIUVYlVNt2SPDcon8jzVzjrKcNTLcTUDu"
+	name=request.form['text']
+	Consumer_Key = "**********************************"
+	Consumer_Secret = "**********************************"
+	Access_Key = "***************************************"
+	Access_Secret = "***********************************"
 
 	consumer = oauth.Consumer(key=Consumer_Key, secret=Consumer_Secret)
 	access_token = oauth.Token(key=Access_Key, secret=Access_Secret)
